@@ -1,5 +1,5 @@
 
-# Backend Application
+# Ascencion of Empired Backend Application
 
 This backend application is built using Spring Boot and supports a multiplayer strategy game with features like player management, game sessions, real-time WebSocket communication, and in-game purchases. The backend handles the core game logic, including boards, players, resources, servers, and sessions.
 
@@ -88,23 +88,30 @@ To run this application, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/GabrielPerezCSDev/PokemonASCII.git
+   git clone https://github.com/GabrielPerezCSDev/Ascension-of-Empires.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd backend-application
+   cd Ascension-of-Empires
    ```
 
 3. **Build and run the application**:
-   You can build the application using Maven or Gradle, then run the application using:
+   You can build the application using Maven and then run it using one of the following methods:
+
+   **Option 1**: Run using the Maven Spring Boot plugin:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+
+   or (if using Maven directly):
    ```bash
    mvn spring-boot:run
    ```
 
-   or
-
+   **Option 2**: Build and run the jar file:
    ```bash
+   ./mvnw package
    java -jar target/backendapplication-0.0.1-SNAPSHOT.jar
    ```
 
@@ -118,7 +125,6 @@ To run this application, follow these steps:
    The application uses Swagger for API documentation. You can view it at:
    ```
    http://localhost:8080/swagger-ui.html
-   ```
 
 ## API Documentation
 
